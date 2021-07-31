@@ -20,24 +20,18 @@ struct ContentView: View {
                         .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                         .overlay(Circle().stroke(Color.orange, lineWidth: 4))
                     
-                        
-                    
-                }
-                
-                HStack(alignment: .top){
-                  
-                    Text("Hola")
-                        .font(.system(size: 32, weight: .bold , design: .default))
+                      Text("Hola")
+                        .font(.system(size: 25, weight: .bold , design: .default))
                         .foregroundColor(.black)
                         
                     + Text("Tripulante")
                         .fontWeight(.bold)
                         .foregroundColor(Color("toronja"))
+                        .font(.system(size: 25, weight: .bold , design: .default))  
                     
-                    
-                    
-                    
-                    }
+                }
+                
+              
                     
                 
             }
