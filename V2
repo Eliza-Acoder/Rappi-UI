@@ -1,0 +1,64 @@
+//
+//  ContentView.swift
+//  Rappi Interfaz
+//
+//  Created by Elizabeth Christelle Romero Espinoza  on 31/07/21.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        
+        ZStack{
+            VStack{
+                HStack(alignment:.top ){
+                    Image("TripulanteRojo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                           .frame(width: 100, height: 100, alignment: .topLeading)
+                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                        .overlay(Circle().stroke(Color.orange, lineWidth: 4))
+                    
+                        
+                    
+                }
+                
+                HStack(alignment: .top){
+                  
+                    Text("Hola")
+                        .font(.system(size: 32, weight: .bold , design: .default))
+                        .foregroundColor(.black)
+                        
+                    + Text("Tripulante")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("toronja"))
+                    
+                    
+                    
+                    
+                    }
+                    
+                
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
